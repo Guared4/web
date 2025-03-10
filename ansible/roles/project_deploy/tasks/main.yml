@@ -1,0 +1,15 @@
+---
+- name: Copy project directory to /home/vagrant
+  copy:
+    src: project/
+    dest: /home/vagrant/project
+    owner: vagrant
+    group: vagrant
+    mode: '0755'
+  tags: project
+
+- name: Run docker-compose to start containers
+  shell: docker-compose -f /home/vagrant/project/docker-compose.yml up -d
+  args:
+    chdir: /home/vagrant/project
+  tags: project
