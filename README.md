@@ -42,8 +42,6 @@ P.S. Подробнее про IaC, вы можете почитать в наш
 | DynamicWeb  | 192.168.57.10  |  bento/ubuntu-22.04  |  
 
 
-![alt text](img/network.png)
-
 ### 2. Создал ansible playbook и роли    
 Запустил playbook    
 ```shell
