@@ -1,0 +1,8 @@
+---
+- hosts: DynamicWeb
+  become: yes
+  gather_facts: false
+
+  roles:
+    - docker
+    - project_deploy
