@@ -43,7 +43,7 @@ P.S. Подробнее про IaC, вы можете почитать в наш
 
 
 ### 2. Создал ansible playbook и роли    
-Запустил playbook    
+Запустил основной playbook web.yml    
 ```shell
 root@ansible:/home/vagrant/ansible# ansible-playbook web.yml
 
